@@ -1,26 +1,63 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .input{
+    @apply focus:border-blue-400 border-2 border-transparent bg-gray-200 py-3 px-6 text-base outline-none;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'Abel-Regular';
+  src: url(/fonts/Abel-Regular.ttf);
+}
+@font-face {
+  font-family: 'BlackOpsOne-Regular';
+  src: url(/fonts/BlackOpsOne-Regular.ttf);
 }
 
-* {
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+html,
+body {
+  font-family: 'Abel-Regular';
+  font-size: 100%;
+  background: hsla(0, 0%, 80%, 0.01);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  /* scroll-behavior: smooth; */
+}
+
+body a {
+  transition: 0.5s all;
+}
+
+.hover_me {
+	transition: all 0.5s linear;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fff;
+}
+.scroller::-webkit-scrollbar {
+  width: 5px;
+}
+.activeScroll{
+  color:orange;
+  text-decoration:underline;
+  cursor: pointer;
+}
+.scroller::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
 }

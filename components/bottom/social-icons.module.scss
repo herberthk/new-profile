@@ -1,0 +1,48 @@
+.icons {
+  display: block;
+  padding: 0;
+  // background: #00a78e;
+  padding: 1.3em 0;
+  text-align: center;
+  margin: 0;
+  li {
+    display: inline-block;
+    margin-right: 1%;
+    a {
+      background: url(/images/social-icons2.png) no-repeat 3px 3px;
+      display: block;
+      height: 32px;
+      width: 32px;
+      margin-right: 1em;
+      transition: 0.5s all;
+      &::before {
+        content: "";
+        display: block;
+        height: 32px;
+        width: 32px;
+        border: 2px solid #fff;
+        transform: rotate(45deg);
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      
+      &:hover {
+        &::before {
+          border-color: #00a78e;
+          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+  }
+}
+
+.icons li a.fb {
+  background-position: 3px -30px;
+}
+.icons li a.lin {
+  background-position: 3px -62px;
+}
+.icons li a.dot {
+  background-position: 3px -94px;
+}
