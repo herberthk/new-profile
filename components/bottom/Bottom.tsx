@@ -3,24 +3,35 @@ import Pointer from "../about/Pointer";
 import Button from "../button/Button";
 import TextArea from "../input/TextArea";
 import { TextInput } from "../input/TextInput";
-import Boarder from "../services/Boarder";
+import Boarder from "../skills/Boarder";
 import SocialIcon from "./SocialIcon";
 import styles from "./social-icons.module.scss";
 import ScrollTop from "./ScrollTop";
+import { TypingTextHeader } from "../others/TypingText";
+import { motion } from "framer-motion";
+import { slideIn } from "../util/motion";
 
 const Bottom = () => {
   const d = new Date();
   const currentYear = d.getFullYear();
   // console.log(currentYear);
   return (
-    <div className="bg-[#1b242f;] pt-[5rem] pb-5" id="section7">
+    <motion.div
+      className="bg-gradient-to-r from-[#1b242f] via-purple-500 to-pink-500 pt-[5rem] pb-5"
+      id="section7"
+      // variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+    >
       <div className="container mx-auto text-center">
         <Pointer text="Contact me" />
-        <h1 className="mt-3 text-3xl font-extrabold uppercase tracking-[0.4rem] text-white">
-          Get in touch with me
-        </h1>
+        <TypingTextHeader text="Get in touch with me" />
         <Boarder />
-        <div className="mt-7 p-6">
+        <motion.div
+          variants={slideIn("right", "tween", 0, 1)}
+          className="mt-7 p-6"
+        >
           <form
             action="post"
             data-netlify="true"
@@ -61,7 +72,7 @@ const Bottom = () => {
               type="submit"
             />
           </form>
-        </div>
+        </motion.div>
         <div className="mx-auto mt-3">
           <p className="text-white">
             © {currentYear} Herbert . All rights reserved
@@ -83,7 +94,7 @@ const Bottom = () => {
         </div>
       </div>
       <ScrollTop />
-    </div>
+    </motion.div>
   );
 };
 

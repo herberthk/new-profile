@@ -4,14 +4,14 @@ import Bottom from "../components/bottom/Bottom";
 import Experience from "../components/experience/Experience";
 import Header from "../components/header/Header";
 import Projects from "../components/projects/Projects";
-import Services from "../components/services/Services";
+import Skills from "../components/skills/Skills";
 
 const Home = () => {
   return (
     <>
       <Header />
       <About />
-      <Services />
+      <Skills />
       <Experience />
       <Awards />
       <Projects />

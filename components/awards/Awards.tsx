@@ -3,55 +3,76 @@ import Image from "next/image";
 import { awards } from "../../mockdata/awards";
 
 import Pointer from "../about/Pointer";
-import Boarder from "../services/Boarder";
+import Boarder from "../skills/Boarder";
+import styles from "./awards.module.scss";
+import classNames from "classnames";
+import { TypingTextHeader } from "../others/TypingText";
+import { motion } from "framer-motion";
+import { fadeIn } from "../util/motion";
 
 const Awards = () => {
   return (
-    <div className="container mx-auto py-[5rem]" id="section5">
-      <div className="mx-auto text-center">
-        <Pointer text="Awards" />
-        <h1 className="mt-3 text-3xl font-extrabold uppercase tracking-[0.4rem] text-black">
-          Certification and awards
-        </h1>
-        <Boarder classes="bg-[#8c8989]" />
-      </div>
-      <ul className="mt-11 flex flex-wrap justify-between space-y-5">
-        {awards.map(({ from, title, url, id }) => {
-          return (
-            <li
-              className="w-[47%] py-4 shadow-md transition duration-500 ease-in-out hover:scale-110 hover:shadow-xl"
-              key={id}
-            >
-              <ul className="flex">
-                <li className="relative mr-7 w-1/4">
-                  <Image
-                    src="/images/certlog.png"
-                    alt="Certificate"
-                    style={{ objectFit: "cover" }}
-                    fill
-                  />
-                </li>
-                <li className="mx-auto w-3/4">
-                  <p className="mb-3 px-5 text-2xl font-bold">
-                    Provided by: {from}
-                  </p>
-                  <p className="px-5 text-2xl">{title}</p>
+    <motion.div
+      className="bg-[#30336b] py-[5rem]"
+      id="section5"
+      // variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+    >
+      <div className="container mx-auto ">
+        <div className="mx-auto text-center">
+          <Pointer text="Awards" />
+          <TypingTextHeader text="Certification and awards" />
+          <Boarder classes="bg-[#fff]" />
+        </div>
+        <ul className="mt-11 flex flex-wrap justify-between space-y-5">
+          {awards.map(({ from, title, url, id }, i) => {
+            return (
+              <motion.li
+                variants={fadeIn(
+                  `${i % 2 === 0 ? "up" : "down"}`,
+                  "spring",
+                  i * 0.5,
+                  0.75
+                )}
+                className={classNames(
+                  "w-[47%] bg-gradient-to-r from-[#30336b] to-[#5352ed] py-4 pl-4 shadow-md transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl",
+                  styles.border
+                )}
+                key={id}
+              >
+                <ul className="flex">
+                  <li className="relative mr-7 w-1/4">
+                    <Image
+                      src="/images/award.webp"
+                      alt="Certificate"
+                      width={100}
+                      height={100}
+                    />
+                  </li>
+                  <li className="mx-auto w-3/4">
+                    <p className="mb-3 px-5 text-2xl font-bold text-[#25CCF7]">
+                      Provided by: {from}
+                    </p>
+                    <p className="px-5 text-2xl text-white">{title}</p>
 
-                  <Link
-                    className="px-5 text-base italic hover:underline"
-                    href={url}
-                    title={title}
-                    target={"_blank"}
-                  >
-                    Yo can view the certificate here
-                  </Link>
-                </li>
-              </ul>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+                    <Link
+                      className="px-5 text-base italic text-white hover:underline"
+                      href={url}
+                      title={title}
+                      target={"_blank"}
+                    >
+                      Yo can view the certificate here
+                    </Link>
+                  </li>
+                </ul>
+              </motion.li>
+            );
+          })}
+        </ul>
+      </div>
+    </motion.div>
   );
 };
 

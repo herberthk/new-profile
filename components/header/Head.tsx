@@ -2,6 +2,8 @@ import { Link as Scroll } from "react-scroll";
 import classNames from "classnames";
 import Logo from "./Logo";
 import styles from "./header.module.scss";
+import { motion } from "framer-motion";
+import { navVariants } from "../util/motion";
 const HeaderLinks = () => {
   //   const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
   //   const headerRef = useRef<HTMLDivElement>(null);
@@ -29,7 +31,12 @@ const HeaderLinks = () => {
   //     };
   //   }, []);
   return (
-    <div className="flex justify-between pt-5">
+    <motion.div
+      className="flex justify-between pt-5"
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+    >
       <Logo />
       <ul className={classNames("mt-4 space-x-6", styles.links)}>
         <li>
@@ -124,7 +131,7 @@ const HeaderLinks = () => {
           </Scroll>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

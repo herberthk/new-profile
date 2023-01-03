@@ -28,7 +28,7 @@ export const bioInfo: data = {
     '<a target="blank" href="https://github.com/herberthk">https://github.com/herberthk</a>',
 };
 
-export const description = `I&apos;m a self-taught full-stack software engineer from the
+export const description = `I'm a self-taught full-stack software engineer from the
 Accounting profession with 5+ years of experience in developing web
 applications both on client and server in a variety of domains and
 tech stacks. My most vital skills are in Typescript, Node.js, and

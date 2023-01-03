@@ -12,19 +12,21 @@ const Header = () => {
       className={classNames("relative flex flex-col", styles.header)}
     >
       <LoadingBar />
-      <div className="mx-auto lg:container">
-        <Image
-          src="/images/bacbg.jpg"
-          alt="bg"
-          quality={100}
-          fill
-          sizes="100vw"
-          style={{
-            objectFit: "cover",
-            zIndex: -1,
-          }}
-        />
+      <Image
+        src="/images/bacbg.jpg"
+        alt="bg"
+        quality={100}
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+          zIndex: -1,
+        }}
+      />
+      <div className="container">
         <HeaderLinks />
+      </div>
+      <div className="container mx-auto">
         <Banner />
       </div>
     </div>

@@ -26,7 +26,8 @@
 
 html,
 body {
-  font-family: 'Abel-Regular';
+  /* font-family: 'Abel-Regular'; */
+  font-family: 'Electrolize', sans-serif;
   font-size: 100%;
   background: hsla(0, 0%, 80%, 0.01);
   overflow-x: hidden;

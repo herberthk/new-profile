@@ -16,3 +16,18 @@
     left: 34%;
   }
 }
+
+.bg1 {
+  background-image: linear-gradient(
+    270deg,
+    #d123e1 0%,
+    #d18aea 26%,
+    #d0c2f4 39%,
+    #ceecfd 50%,
+    #a9c8f4 61%,
+    #7b9eea 74%,
+    #2362e1 100%
+  );
+  filter: blur(125px);
+  z-index: -10;
+}

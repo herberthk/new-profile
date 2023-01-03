@@ -1,20 +1,29 @@
 import classNames from "classnames";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { FC } from "react";
+import { fadeIn, slideIn } from "../util/motion";
 import styles from "./experience.module.scss";
 interface Props {
   name: string;
   desc: string;
   link: string;
   iconBg: string;
+  index: number;
 }
-const TimeLine: FC<Props> = ({ desc, iconBg, link, name }) => {
+const TimeLine: FC<Props> = ({ desc, iconBg, link, name, index }) => {
   return (
-    <section className={styles.timeline}>
+    <motion.section
+      className={styles.timeline}
+      variants={slideIn("left", "spring", index * 0.5, 0.75)}
+    >
       <div className={styles.content}>
-        <div className={classNames(iconBg, styles.badge)}>
+        <motion.div
+          variants={fadeIn("left", "spring", index * 0.5, 0.75)}
+          className={classNames("hover_me", iconBg, styles.badge)}
+        >
           <i className="fas fa-briefcase" />
-        </div>
+        </motion.div>
         <div className={styles.panel}>
           <h4 className={styles.title}>{name}</h4>
           <div className={styles.body}>
@@ -27,7 +36,7 @@ const TimeLine: FC<Props> = ({ desc, iconBg, link, name }) => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
