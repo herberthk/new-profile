@@ -11,7 +11,12 @@ interface Props {
 }
 const Percentage: FC<Props> = ({ percentage, skill, classes, index }) => (
   <motion.div
-    variants={fadeIn("right", "spring", index * 0.1, 0.75)}
+    variants={fadeIn(
+      `${index % 2 === 0 ? "left" : "right"}`,
+      "spring",
+      index * 0.1,
+      0.75
+    )}
     className={classNames("flex justify-between px-8 py-2", classes)}
   >
     <p className=" w-[35%] text-xl font-black text-[#34bfff]">{skill}</p>

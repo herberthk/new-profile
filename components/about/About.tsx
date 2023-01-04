@@ -27,7 +27,7 @@ const About = () => {
             className="hover_me rounded-xl"
           />
         </motion.div>
-        <div className="mx-auto">
+        <div className="hover_me mx-auto p-4">
           <motion.h1
             variants={fadeIn("down", "tween", 0.2, 1)}
             className="mb-4 text-3xl font-bold uppercase tracking-wider"

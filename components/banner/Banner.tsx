@@ -14,7 +14,11 @@ const Banner = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={classNames("mt-12 mb-7 rounded-md p-10", styles.banner)}
+      className={classNames(
+        "mt-12 mb-7 rounded-md p-10",
+        styles.banner,
+        styles.shadow
+      )}
     >
       <div className="grid grid-cols-2 gap-9">
         <div className="w-full">
@@ -27,7 +31,12 @@ const Banner = () => {
             {Object.entries(bioInfo).map(([key, value], i) => (
               <motion.li
                 key={key}
-                variants={fadeIn("right", "spring", i * 0.5, 0.75)}
+                variants={fadeIn(
+                  `${i % 2 === 0 ? "left" : "right"}`,
+                  "spring",
+                  i * 0.5,
+                  0.75
+                )}
               >
                 <ul className="flex">
                   <li className="w-[20%] text-lg uppercase">

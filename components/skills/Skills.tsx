@@ -7,6 +7,7 @@ import Pointer from "../about/Pointer";
 import { TypingTextHeader } from "../others/TypingText";
 import Boarder from "./Boarder";
 import Percentage from "./Percentage";
+import styles from "./skill.module.scss";
 
 const Skills = () => {
   return (
@@ -24,7 +25,12 @@ const Skills = () => {
           <TypingTextHeader text="MY SKILLS" />
           <Boarder classes="bg-[#fff]" />
         </div>
-        <div className="mx-auto mt-11 w-[70%] border border-[#34bfff] py-8">
+        <div
+          className={classNames(
+            "mx-auto mt-11 w-[70%] border border-[#34bfff] py-8",
+            styles.shadow
+          )}
+        >
           {shuffle(skills).map(({ percentage, skill }, i) => (
             <Percentage
               index={i}

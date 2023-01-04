@@ -15,7 +15,12 @@ const TimeLine: FC<Props> = ({ desc, iconBg, link, name, index }) => {
   return (
     <motion.section
       className={styles.timeline}
-      variants={slideIn("left", "spring", index * 0.5, 0.75)}
+      variants={slideIn(
+        `${index % 2 === 0 ? "left" : "right"}`,
+        "spring",
+        index * 0.5,
+        0.75
+      )}
     >
       <div className={styles.content}>
         <motion.div

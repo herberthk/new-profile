@@ -12,7 +12,12 @@ interface Props {
 const Year: FC<Props> = ({ bgColor, year, index }) => {
   return (
     <motion.div
-      variants={slideIn("up", "spring", index * 0.5, 0.75)}
+      variants={slideIn(
+        `${index % 2 === 0 ? "up" : "down"}`,
+        "spring",
+        index * 0.5,
+        0.75
+      )}
       className={classNames("mx-auto", styles.year, bgColor)}
     >
       {year}

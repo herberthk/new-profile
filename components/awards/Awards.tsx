@@ -30,6 +30,10 @@ const Awards = () => {
           {awards.map(({ from, title, url, id }, i) => {
             return (
               <motion.li
+                whileHover={{
+                  scale: 1.05,
+                  transition: { easings: ["easeIn", "easeOut"] },
+                }}
                 variants={fadeIn(
                   `${i % 2 === 0 ? "up" : "down"}`,
                   "spring",
@@ -37,7 +41,7 @@ const Awards = () => {
                   0.75
                 )}
                 className={classNames(
-                  "w-[47%] bg-gradient-to-r from-[#30336b] to-[#5352ed] py-4 pl-4 shadow-md transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl",
+                  "w-[47%] bg-gradient-to-r from-[#30336b] to-[#5352ed] py-4 pl-4 shadow-md transition duration-500 ease-in-out",
                   styles.border
                 )}
                 key={id}
