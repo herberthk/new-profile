@@ -3,21 +3,113 @@ interface Props {
   percentage: number;
 }
 export const skills: Props[] = [
-  { percentage: 70, skill: "HTML" },
+  { percentage: 95, skill: "HTML" },
   {
-    percentage: 80,
+    percentage: 90,
     skill: "JavaScript",
   },
   {
-    percentage: 60,
+    percentage: 75,
     skill: "Docker",
   },
   {
-    percentage: 70,
+    percentage: 80,
     skill: "TypeScript",
   },
   {
-    percentage: 80,
+    percentage: 90,
     skill: "Reactjs",
+  },
+  {
+    percentage: 90,
+    skill: "Nextjs",
+  },
+  {
+    percentage: 90,
+    skill: "Nodejs/Expressjs",
+  },
+  {
+    percentage: 90,
+    skill: "Firebase",
+  },
+  {
+    percentage: 75,
+    skill: "Kubernetes",
+  },
+  {
+    percentage: 95,
+    skill: "CSS3",
+  },
+  {
+    percentage: 95,
+    skill: "Cypress",
+  },
+  {
+    percentage: 95,
+    skill: "Styled-components",
+  },
+  {
+    percentage: 95,
+    skill: "Github-actions",
+  },
+  {
+    percentage: 90,
+    skill: "Redux",
+  },
+  {
+    percentage: 85,
+    skill: "Graphql",
+  },
+  {
+    percentage: 90,
+    skill: "MongoDB",
+  },
+  {
+    percentage: 88,
+    skill: "PHP/Laravel/slim",
+  },
+  {
+    percentage: 75,
+    skill: "SASS",
+  },
+  {
+    percentage: 90,
+    skill: "SQL",
+  },
+  {
+    percentage: 80,
+    skill: "Serverless Functions",
+  },
+  {
+    percentage: 85,
+    skill: "Micro-services",
+  },
+  {
+    percentage: 80,
+    skill: "ArgoCD",
+  },
+  {
+    percentage: 80,
+    skill: "S3",
+  },
+  {
+    percentage: 35,
+    skill: "Vuejs",
+  },
+  {
+    percentage: 50,
+    skill: "Amazon RDS",
+  },
+  {
+    percentage: 30,
+    skill: "DynamoDB",
+  },
+  {
+    percentage: 30,
+    skill: "Apache Kafka",
+  },
+  {
+    percentage: 40,
+    skill: "Nestjs",
   },
 ];

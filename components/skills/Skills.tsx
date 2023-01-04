@@ -1,5 +1,7 @@
+"use client";
 import classNames from "classnames";
 import { motion } from "framer-motion";
+import shuffle from "lodash/shuffle";
 import { skills } from "../../mockdata/skills";
 import Pointer from "../about/Pointer";
 import { TypingTextHeader } from "../others/TypingText";
@@ -9,7 +11,7 @@ import Percentage from "./Percentage";
 const Skills = () => {
   return (
     <motion.div
-      // variants={staggerContainer()}
+      // variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
@@ -23,7 +25,7 @@ const Skills = () => {
           <Boarder classes="bg-[#fff]" />
         </div>
         <div className="mx-auto mt-11 w-[70%] border border-[#34bfff] py-8">
-          {skills.map(({ percentage, skill }, i) => (
+          {shuffle(skills).map(({ percentage, skill }, i) => (
             <Percentage
               index={i}
               key={i}
