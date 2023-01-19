@@ -31,12 +31,7 @@ const Banner = () => {
             {Object.entries(bioInfo).map(([key, value], i) => (
               <motion.li
                 key={key}
-                variants={fadeIn(
-                  `${i % 2 === 0 ? "left" : "right"}`,
-                  "spring",
-                  i * 0.5,
-                  0.75
-                )}
+                variants={fadeIn("left", "spring", i * 0.5, 0.75)}
               >
                 <ul className="flex">
                   <li className="w-[20%] text-lg uppercase">

@@ -2,14 +2,14 @@ import { description } from "../../mockdata/data";
 import Button from "../button/Button";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn } from "../util/motion";
+import { fadeIn, slideIn, staggerContainer } from "../util/motion";
 
 const About = () => {
   return (
     <motion.div
       className="container mx-auto h-[85vh] pt-[6rem]"
       id="section2"
-      // variants={staggerContainer()}
+      variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}

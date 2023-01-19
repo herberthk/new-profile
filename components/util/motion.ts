@@ -44,11 +44,11 @@ export const slideIn = (
 });
 
 export const staggerContainer = {
-  hidden: {},
+  hidden: { opacity: 0 },
   show: {
-    // opacity: 1,
+    opacity: 1,
     transition: {
-      staggerChildren: 0.5,
+      delayChildren: 0.5,
     },
   },
 };
