@@ -7,14 +7,14 @@ import { fadeIn, slideIn, staggerContainer } from "../util/motion";
 const About = () => {
   return (
     <motion.div
-      className="container mx-auto h-[85vh] pt-[6rem]"
+      className="container mx-auto pt-[1rem] sm:h-[85vh] sm:pt-[6rem]"
       id="section2"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      // viewport={{ once: false, amount: 0.17 }}
     >
-      <div className=" grid grid-cols-2 gap-7">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-7">
         <motion.div
           className="relative mx-auto w-[100%]"
           variants={slideIn("right", "tween", 0, 1)}

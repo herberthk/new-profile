@@ -13,19 +13,19 @@ const Banner = () => {
       // variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      // viewport={{ once: false, amount: 0.17 }}
       className={classNames(
-        "mt-12 mb-7 rounded-md p-10",
+        "mt-12 mb-7 rounded-md p-6 sm:p-10",
         styles.banner,
         styles.shadow
       )}
     >
-      <div className="grid grid-cols-2 gap-9">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-9">
         <div className="w-full">
           <Pointer text="Hi I AM!" />
           <TypingTextHeader
             text="FULL STACK SOFTWARE ENGINEER"
-            classes="text-[1.2rem]"
+            classes="sm:text-[1.2rem] text-[1rem]"
           />
           <ul className="mt-5 flex flex-col space-y-4 border-t-[1px] py-5 text-white">
             {Object.entries(bioInfo).map(([key, value], i) => (
@@ -34,7 +34,7 @@ const Banner = () => {
                 variants={fadeIn("left", "spring", i * 0.5, 0.75)}
               >
                 <ul className="flex">
-                  <li className="w-[20%] text-lg uppercase">
+                  <li className="w-[32%] text-lg uppercase sm:w-[20%]">
                     <b>{key}</b>
                   </li>
                   <li
@@ -47,7 +47,7 @@ const Banner = () => {
           </ul>
         </div>
         <motion.div
-          className="relative ml-auto h-[491px] w-[369px] rounded-2xl border-[5px] border-orange-400"
+          className="relative ml-auto h-[330px] w-[310px] rounded-2xl border-[5px] border-orange-400 sm:h-[491px] sm:w-[369px]"
           variants={slideIn("right", "tween", 0, 1)}
         >
           <Image

@@ -13,8 +13,8 @@ const Experience = () => {
       // variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className="container mx-auto py-[5rem]"
+      // viewport={{ once: false, amount: 0.17 }}
+      className="container mx-auto py-[2rem] sm:py-[5rem]"
       id="section4"
     >
       <div className="mx-auto text-center">
@@ -22,9 +22,9 @@ const Experience = () => {
         <TypingTextHeader text="MY Experience" color="text-black" />
         <Boarder classes="bg-[#8c8989]" />
       </div>
-      <div className="mt-[3rem]">
+      <div className="mt-[1rem] sm:mt-[3rem]">
         {experience.map(({ desc, link, name, year }, i) => (
-          <div key={i} className=" grid grid-cols-2">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-2">
             <Year
               year={year}
               bgColor={(i + 1) % 2 === 0 ? styles.orange : styles.green}

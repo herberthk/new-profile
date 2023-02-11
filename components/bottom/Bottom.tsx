@@ -22,7 +22,7 @@ const Bottom = () => {
       // variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      // viewport={{ once: false, amount: 0.25 }}
     >
       <div className="container mx-auto text-center">
         <Pointer text="Contact me" />
@@ -36,7 +36,7 @@ const Bottom = () => {
             action="post"
             data-netlify="true"
             data-netlify-recaptcha="true"
-            className="mx-auto w-1/2"
+            className="mx-auto sm:w-1/2"
           >
             <TextInput
               type="text"

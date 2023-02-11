@@ -1,4 +1,3 @@
-"use client";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import shuffle from "lodash/shuffle";
@@ -15,8 +14,8 @@ const Skills = () => {
       // variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className="bg-gradient-to-r from-[#30336b] to-[#5352ed] py-[5rem]"
+      // viewport={{ once: false, amount: 0.17 }}
+      className="bg-gradient-to-r from-[#30336b] to-[#5352ed] py-[2rem] sm:py-[5rem]"
       id="section3"
     >
       <div className="container mx-auto">
@@ -27,7 +26,7 @@ const Skills = () => {
         </div>
         <div
           className={classNames(
-            "mx-auto mt-11 w-[70%] border border-[#34bfff] py-8",
+            "mx-auto mt-11 border border-[#34bfff] py-6 sm:w-[70%] sm:py-8",
             styles.shadow
           )}
         >

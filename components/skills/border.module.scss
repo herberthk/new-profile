@@ -1,5 +1,4 @@
 .border {
-  width: 18%;
   height: 1px;
   display: block;
   margin-top: 26px;
@@ -14,6 +13,9 @@
     width: 73px;
     top: -4px;
     left: 34%;
+    @media (min-width: 640px) {
+      left: 25%;
+    }
   }
 }
 

@@ -12,19 +12,19 @@ import { fadeIn } from "../util/motion";
 const Projects = () => {
   return (
     <motion.div
-      className="container mx-auto py-[5rem]"
+      className="container mx-auto py-8 sm:py-[5rem]"
       id="section6"
       // variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      // viewport={{ once: false, amount: 0.17 }}
     >
       <div className="mx-auto text-center">
         <Pointer text="Projects" />
-        <TypingTextHeader text="My Recent projects" color="" />
-        <Boarder />
+        <TypingTextHeader text="My Recent projects" color="text-black" />
+        <Boarder classes="bg-[#8c8989]" />
       </div>
-      <div className="mt-7 grid grid-cols-2 gap-6">
+      <div className="mt-7 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-7">
         {projects.map(({ desc, id, imageUrl, name, url }, i) => (
           <motion.div
             variants={fadeIn(
@@ -47,7 +47,7 @@ const Projects = () => {
               style={{ objectFit: "cover" }}
             />
             <div className={styles.overlay}>
-              <p className="mb-4 text-center text-2xl font-bold uppercase text-orange-400">
+              <p className="mb-4 text-center text-[1rem] font-bold uppercase text-orange-400 sm:text-2xl">
                 {name}
               </p>
               <p className="text-2xl text-white">{desc}</p>

@@ -1,0 +1,107 @@
+import { Link as Scroll } from "react-scroll";
+import classNames from "classnames";
+import styles from "./header.module.scss";
+const SmallMenu = () => {
+  return (
+    <ul
+      className={classNames(
+        "mx-auto mt-4 flex flex-col space-y-3 sm:hidden",
+        styles.links
+      )}
+    >
+      <li>
+        <Scroll
+          activeClass="activeScroll"
+          to="section1"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
+          data-hover="Home"
+        >
+          Home
+        </Scroll>
+      </li>
+      <li>
+        <Scroll
+          activeClass="activeScroll"
+          to="section2"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
+          data-hover="About"
+        >
+          About
+        </Scroll>
+      </li>
+      <li>
+        <Scroll
+          activeClass="activeScroll"
+          to="section3"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
+          data-hover="Skills"
+        >
+          Skills
+        </Scroll>
+      </li>
+      <li>
+        <Scroll
+          activeClass="activeScroll"
+          to="section4"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
+          data-hover="Experience"
+        >
+          Experience
+        </Scroll>
+      </li>
+      <li>
+        <Scroll
+          activeClass="activeScroll"
+          to="section5"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
+          data-hover="Awards"
+        >
+          Awards
+        </Scroll>
+      </li>
+      <li>
+        <Scroll
+          activeClass="activeScroll"
+          to="section6"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
+          data-hover="Projects"
+        >
+          Projects
+        </Scroll>
+      </li>
+      <li>
+        <Scroll
+          activeClass="activeScroll"
+          to="section7"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
+          data-hover=" Contact"
+        >
+          Contact
+        </Scroll>
+      </li>
+    </ul>
+  );
+};
+
+export default SmallMenu;

@@ -23,10 +23,8 @@ const Header = () => {
           zIndex: -1,
         }}
       />
-      <div className="container">
-        <HeaderLinks />
-      </div>
       <div className="container mx-auto">
+        <HeaderLinks />
         <Banner />
       </div>
     </div>

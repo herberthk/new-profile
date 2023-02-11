@@ -11,13 +11,13 @@ interface Props {
 export const TypingTextHeader: FC<Props> = ({
   color = "text-white",
   text,
-  classes = "text-3xl",
+  classes = "sm:text-3xl text-[1rem] mt-[1rem]",
 }) => {
   return (
     <motion.h1
       variants={textContainer}
       className={classNames(
-        "mt-3 font-extrabold uppercase tracking-[0.4rem]",
+        "mt-3 font-extrabold uppercase tracking-[0.08rem] sm:tracking-[0.4rem]",
         color,
         classes
       )}

@@ -18,7 +18,11 @@ const Year: FC<Props> = ({ bgColor, year, index }) => {
         index * 0.5,
         0.75
       )}
-      className={classNames("mx-auto", styles.year, bgColor)}
+      className={classNames(
+        "left-1 mx-auto sm:left-[-33px]",
+        styles.year,
+        bgColor
+      )}
     >
       {year}
     </motion.div>
