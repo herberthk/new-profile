@@ -35,7 +35,7 @@ const Bottom = () => {
         closeOnClick: true,
         progress: undefined,
       });
-      toast.success(`He'll respond to you with in 24 hours`, {
+      toast.success(`I'll respond to you with in 24 hours`, {
         closeOnClick: true,
         progress: undefined,
       });
