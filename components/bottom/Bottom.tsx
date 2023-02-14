@@ -10,11 +10,48 @@ import ScrollTop from "./ScrollTop";
 import { TypingTextHeader } from "../others/TypingText";
 import { motion } from "framer-motion";
 import { slideIn } from "../util/motion";
+import { FormEvent, useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Bottom = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const d = new Date();
   const currentYear = d.getFullYear();
-  // console.log(currentYear);
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const result = await axios.post("/api", {
+        email,
+        name,
+        message,
+      });
+
+      toast.success(result.data.message, {
+        closeOnClick: true,
+        progress: undefined,
+      });
+      toast.success(`He'll respond to you with in 24 hours`, {
+        closeOnClick: true,
+        progress: undefined,
+      });
+
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      toast.error("Something went wrong ", {
+        closeOnClick: true,
+        progress: undefined,
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <motion.div
       className="bg-gradient-to-r from-[#1b242f] via-purple-500 to-pink-500 pt-[5rem] pb-5"
@@ -33,24 +70,21 @@ const Bottom = () => {
           className="mt-7 p-6"
         >
           <form
+            onSubmit={handleSubmit}
             action="post"
-            data-netlify="true"
-            data-netlify-recaptcha="true"
             className="mx-auto sm:w-1/2"
           >
             <TextInput
               type="text"
-              name="name"
-              // value=""
+              onChange={(e) => setName(e.target.value)}
+              value={name}
               placeholder="Name"
               otherClasses="mb-4 rounded-full"
               required
-              id="name"
             />
             <TextInput
-              name="email"
-              // value=""
-              id="email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
               required
               type="email"
               placeholder="Email"
@@ -60,17 +94,27 @@ const Bottom = () => {
               inputClassName="mt-4 rounded-lg"
               placeholder="Message"
               name="message"
-              id="message"
               required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               // isValid={false}
             />
             <div data-netlify-recaptcha="true"></div>
-            <Button
-              text="Send"
-              backgroundColor="bg-white"
-              otherClasses="text-orange-400 font-bold mx-auto mt-4 uppercase"
-              type="submit"
-            />
+            {loading ? (
+              <Button
+                text="Please wait"
+                backgroundColor="bg-white"
+                otherClasses="text-orange-400 font-bold mx-auto mt-4 uppercase"
+              />
+            ) : (
+              <Button
+                text="Send"
+                disabled={loading}
+                backgroundColor="bg-white"
+                otherClasses="text-orange-400 font-bold mx-auto mt-4 uppercase"
+                type="submit"
+              />
+            )}
           </form>
         </motion.div>
         <div className="mx-auto mt-3">

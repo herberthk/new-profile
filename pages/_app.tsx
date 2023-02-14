@@ -1,5 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -17,6 +19,18 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta
         name="keywords"
         content="Kavuma Herbert, Web designer, Web developer, Software Engineer, Internet master, Database administrator, mobile application developer, System administrator"
+      />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
       />
       <Component {...pageProps} />
     </>
