@@ -33,6 +33,7 @@ const Document = () => (
         href="/icons/safari-pinned-tab.svg"
         color="#5bbad5"
       />
+      {/* <script defer src="https://www.google.com/recaptcha/api.js" /> */}
     </Head>
     <body className="scroller">
       <Main />

@@ -19,8 +19,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scroll": "^1.8.9",
-    "sharp": "^0.31.2",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "react-type-animation": "^2.1.2",
+    "sharp": "^0.31.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.191",

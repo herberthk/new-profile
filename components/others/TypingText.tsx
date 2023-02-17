@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { FC } from "react";
 import { motion } from "framer-motion";
 import { textContainer, textVariant2 } from "../util/motion";
+// import { TypeAnimation } from "react-type-animation";
 
 interface Props {
   text: string;
@@ -22,6 +23,11 @@ export const TypingTextHeader: FC<Props> = ({
         classes
       )}
     >
+      {/* <TypeAnimation
+        sequence={[text, 1000]}
+        //speed={75} // Custom Speed from 1-99 - Default Speed: 40
+        wrapper="span" // Animation will be rendered as a <span>
+      /> */}
       {Array.from(text).map((letter, index) => (
         <motion.span variants={textVariant2()} key={index}>
           {letter === " " ? "\u00A0" : letter}

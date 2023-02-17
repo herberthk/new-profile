@@ -18,7 +18,7 @@ export const projects: Projects[] = [
     id: "2",
     name: "Chat GPT codex application",
     desc: "This application is powered by Chat-GPT3 Artificial intelligence models that can answer almost all questions asked to it. It can also assist you in writing code for major programming languages, writing tests, and debugging",
-    imageUrl: "/images/chatgpt.png",
+    imageUrl: "/images/codex.png",
     url: "https://chat-gpt-codex-app.vercel.app/",
   },
   {

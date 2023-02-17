@@ -99,7 +99,10 @@ const Bottom = () => {
               onChange={(e) => setMessage(e.target.value)}
               // isValid={false}
             />
-            <div data-netlify-recaptcha="true"></div>
+            {/* <div
+              className="g-recaptcha"
+              data-sitekey={process.env.RECAPTCHA_SITE_KEY}
+            ></div> */}
             {loading ? (
               <Button
                 text="Please wait"
@@ -109,7 +112,9 @@ const Bottom = () => {
             ) : (
               <Button
                 text="Send"
-                disabled={loading}
+                // data-callback="onSubmit"
+                // data-action="submit"
+                // data-sitekey={process.env.RECAPTCHA_SITE_KEY}
                 backgroundColor="bg-white"
                 otherClasses="text-orange-400 font-bold mx-auto mt-4 uppercase"
                 type="submit"

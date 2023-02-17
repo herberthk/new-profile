@@ -7,6 +7,8 @@ declare global {
       SMTP: string;
       SMTP_USER: string;
       SMTP_PASSWORD: string;
+      RECAPTCHA_SITE_KEY: string;
+      RECAPTCHA_SECRET_KEY: string;
     }
   }
 }
