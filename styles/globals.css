@@ -6,6 +6,10 @@
   .input{
     @apply focus:border-blue-400 border-2 border-transparent bg-gray-200 py-3 px-6 text-base outline-none;
   }
+
+  .custom-button{
+    @apply flex border border-transparent transition duration-500 ease-in-out hover:scale-110;
+  }
 }
 
 @font-face {

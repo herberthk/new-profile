@@ -1,9 +1,5 @@
-interface Awards {
-  from: string;
-  title: string;
-  url: string;
-  id?: string;
-}
+import { Awards } from "../interface";
+
 export const awards: Awards[] = [
   {
     id: "1",

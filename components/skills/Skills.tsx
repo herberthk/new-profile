@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { motion } from "framer-motion";
-import shuffle from "lodash/shuffle";
 import { skills } from "../../mockdata/skills";
 import Pointer from "../about/Pointer";
 import { TypingTextHeader } from "../others/TypingText";
@@ -30,7 +29,7 @@ const Skills = () => {
             styles.shadow
           )}
         >
-          {shuffle(skills).map(({ percentage, skill }, i) => (
+          {skills.map(({ percentage, skill }, i) => (
             <Percentage
               index={i}
               key={i}

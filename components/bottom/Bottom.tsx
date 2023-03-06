@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Pointer from "../about/Pointer";
-import Button from "../button/Button";
+import CustomButton from "../button/Button";
 import TextArea from "../input/TextArea";
 import { TextInput } from "../input/TextInput";
 import Boarder from "../skills/Boarder";
@@ -104,13 +104,13 @@ const Bottom = () => {
               data-sitekey={process.env.RECAPTCHA_SITE_KEY}
             ></div> */}
             {loading ? (
-              <Button
+              <CustomButton
                 text="Please wait"
                 backgroundColor="bg-white"
                 otherClasses="text-orange-400 font-bold mx-auto mt-4 uppercase"
               />
             ) : (
-              <Button
+              <CustomButton
                 text="Send"
                 // data-callback="onSubmit"
                 // data-action="submit"

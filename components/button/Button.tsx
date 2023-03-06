@@ -1,5 +1,7 @@
 import classNames from "classnames";
-import React, { ButtonHTMLAttributes, FC } from "react";
+import React, { ButtonHTMLAttributes, forwardRef } from "react";
+
+import { ForwardReferenceComponent } from "../../interface";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
@@ -44,25 +46,33 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   paddingY?: string;
 
   fontSize?: string;
+
+  bold?: boolean;
 }
-export const Button: FC<ButtonProps> = ({
-  backgroundColor,
-  textColor = "text-white",
-  uppercase = false,
-  rounded = true,
-  text,
-  otherClasses,
-  prefixIcon,
-  suffixIcon,
-  fontSize = "text-[1.2rem]",
-  paddingX = "px-[2rem]",
-  paddingY = "py-[0.6rem]",
-  ...rest
-}) => {
+
+const CustomButton = forwardRef(function CustomButton(
+  {
+    backgroundColor,
+    textColor = "text-white",
+    uppercase = false,
+    rounded = true,
+    text,
+    otherClasses,
+    prefixIcon,
+    suffixIcon,
+    bold = false,
+    fontSize = "text-[1.2rem]",
+    paddingX = "px-[2rem]",
+    paddingY = "py-[0.6rem]",
+    as: Component = "button",
+    ...rest
+  },
+  ref
+) {
   return (
-    <button
+    <Component
       className={classNames(
-        "flex border border-transparent font-bold transition duration-500 ease-in-out hover:scale-110",
+        "custom-button",
         backgroundColor,
         paddingX,
         paddingY,
@@ -73,14 +83,16 @@ export const Button: FC<ButtonProps> = ({
           uppercase: uppercase,
           "rounded-full": rounded,
           "rounded-lg": !rounded,
+          "font-bold": bold,
         }
       )}
       {...rest}
+      ref={ref}
     >
-      {prefixIcon ? prefixIcon : null} <span>{text}</span>{" "}
+      {prefixIcon ? prefixIcon : null} <span>{text}</span>
       {suffixIcon ? suffixIcon : null}
-    </button>
+    </Component>
   );
-};
+}) as ForwardReferenceComponent<"button", ButtonProps>;
 
-export default Button;
+export default CustomButton;

@@ -1,9 +1,35 @@
-interface Props {
-  skill: string;
-  percentage: number;
-}
-export const skills: Props[] = [
+import { Skills } from "../interface";
+
+export const skills: Skills[] = [
+  {
+    percentage: 90,
+    skill: "Nextjs",
+  },
+  {
+    percentage: 90,
+    skill: "Nodejs/Expressjs",
+  },
+  {
+    percentage: 90,
+    skill: "Firebase",
+  },
+  {
+    percentage: 80,
+    skill: "React-query",
+  },
+  {
+    percentage: 80,
+    skill: "tRPC",
+  },
+  {
+    percentage: 80,
+    skill: "Prisma",
+  },
   { percentage: 95, skill: "HTML" },
+  {
+    percentage: 80,
+    skill: "Prisma",
+  },
   {
     percentage: 90,
     skill: "JavaScript",
@@ -20,18 +46,7 @@ export const skills: Props[] = [
     percentage: 90,
     skill: "Reactjs",
   },
-  {
-    percentage: 90,
-    skill: "Nextjs",
-  },
-  {
-    percentage: 90,
-    skill: "Nodejs/Expressjs",
-  },
-  {
-    percentage: 90,
-    skill: "Firebase",
-  },
+
   {
     percentage: 75,
     skill: "Kubernetes",
@@ -54,7 +69,7 @@ export const skills: Props[] = [
   },
   {
     percentage: 90,
-    skill: "Redux",
+    skill: "Redux/tookit",
   },
   {
     percentage: 85,

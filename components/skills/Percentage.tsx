@@ -1,15 +1,16 @@
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { FC } from "react";
+import { PercentageProps } from "../../interface";
 import { fadeIn } from "../util/motion";
 import styles from "./progress.module.scss";
-interface Props {
-  percentage: number;
-  skill: string;
-  classes?: string;
-  index: number;
-}
-const Percentage: FC<Props> = ({ percentage, skill, classes, index }) => (
+
+const Percentage: FC<PercentageProps> = ({
+  percentage,
+  skill,
+  classes,
+  index,
+}) => (
   <motion.div
     variants={fadeIn("right", "spring", index * 0.1, 0.75)}
     className={classNames("flex justify-between py-2 px-4 sm:px-8", classes)}

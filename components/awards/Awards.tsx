@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { awards } from "../../mockdata/awards";
-
 import Pointer from "../about/Pointer";
 import Boarder from "../skills/Boarder";
 import styles from "./awards.module.scss";
@@ -35,7 +34,8 @@ const Awards = () => {
                   transition: { easings: ["easeIn", "easeOut"] },
                 }}
                 variants={fadeIn(
-                  `${i % 2 === 0 ? "up" : "down"}`,
+                  "right",
+                  // `${i % 2 === 0 ? "up" : "down"}`,
                   "spring",
                   i * 0.5,
                   0.75

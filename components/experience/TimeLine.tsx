@@ -2,16 +2,18 @@ import classNames from "classnames";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FC } from "react";
+import { TimeLineProps } from "../../interface";
 import { fadeIn, slideIn } from "../util/motion";
 import styles from "./experience.module.scss";
-interface Props {
-  name: string;
-  desc: string;
-  link: string;
-  iconBg: string;
-  index: number;
-}
-const TimeLine: FC<Props> = ({ desc, iconBg, link, name, index }) => {
+
+const TimeLine: FC<TimeLineProps> = ({
+  desc,
+  iconBg,
+  name,
+  index,
+  projects,
+  techStack,
+}) => {
   return (
     <motion.section
       className={styles.timeline}
@@ -33,10 +35,39 @@ const TimeLine: FC<Props> = ({ desc, iconBg, link, name, index }) => {
           <h4 className={styles.title}>{name}</h4>
           <div className={styles.body}>
             <p>
-              {desc}
-              <Link target="_blank" href={link}>
-                Read More
-              </Link>
+              {desc} Some of the projects I contributed to include the following
+            </p>
+            <p className="break-all leading-normal">
+              {projects.map(({ project, url }, i) => (
+                <Link
+                  className={classNames(
+                    "text-[1rem] text-[#00a78e] hover:underline",
+                    {
+                      "ml-2": i !== 0,
+                    }
+                  )}
+                  key={i}
+                  href={url}
+                >
+                  {project}
+                </Link>
+              ))}
+            </p>
+            And the tech-stack we used includes
+            <p className="break-all leading-normal">
+              {techStack.map((t, i) => (
+                <span
+                  className={classNames(
+                    "rounded-full bg-[#00a78e] p-1 text-sm text-white",
+                    {
+                      "ml-1": i !== 0,
+                    }
+                  )}
+                  key={i}
+                >
+                  {t}
+                </span>
+              ))}
             </p>
           </div>
         </div>

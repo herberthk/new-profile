@@ -1,5 +1,5 @@
 import { description } from "../../mockdata/data";
-import Button from "../button/Button";
+import CustomButton from "../button/Button";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, staggerContainer } from "../util/motion";
@@ -44,7 +44,7 @@ const About = () => {
             variants={slideIn("left", "tween", 1, 1)}
             className="mt-4 inline-flex"
           >
-            <Button
+            <CustomButton
               text="My work"
               backgroundColor="text-white"
               textColor="text-orange-400"
@@ -55,7 +55,7 @@ const About = () => {
                   .scrollIntoView({ behavior: "smooth" })
               }
             />
-            <Button
+            <CustomButton
               text="Hire me"
               backgroundColor="text-white"
               textColor="text-orange-400"

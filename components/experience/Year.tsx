@@ -1,15 +1,11 @@
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { FC } from "react";
+import { YearProps } from "../../interface";
 import { slideIn } from "../util/motion";
 import styles from "./experience.module.scss";
 
-interface Props {
-  year: string;
-  bgColor: string;
-  index: number;
-}
-const Year: FC<Props> = ({ bgColor, year, index }) => {
+const Year: FC<YearProps> = ({ bgColor, year, index }) => {
   return (
     <motion.div
       variants={slideIn(

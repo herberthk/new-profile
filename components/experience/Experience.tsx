@@ -23,7 +23,7 @@ const Experience = () => {
         <Boarder classes="bg-[#8c8989]" />
       </div>
       <div className="mt-[1rem] sm:mt-[3rem]">
-        {experience.map(({ desc, link, name, year }, i) => (
+        {experience.map(({ desc, name, year, projects, techStack }, i) => (
           <div key={i} className="grid grid-cols-1 sm:grid-cols-2">
             <Year
               year={year}
@@ -33,9 +33,10 @@ const Experience = () => {
             <TimeLine
               desc={desc}
               iconBg={(i + 1) % 2 === 0 ? styles.red : styles.blue}
-              link={link}
               name={name}
               index={i}
+              projects={projects}
+              techStack={techStack}
             />
           </div>
         ))}

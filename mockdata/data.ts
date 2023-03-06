@@ -1,21 +1,6 @@
-interface data {
-  name: string;
-  dob: string;
-  phone: string;
-  address: string;
-  website: string;
-  linkedin: string;
-  github: string;
-}
+import { BioData, Services } from "../interface";
 
-interface Services {
-  icon: string;
-  tile: string;
-  desc: string;
-  id?: string;
-}
-
-export const bioInfo: data = {
+export const bioInfo: BioData = {
   name: "KAVUMA HERBERT",
   address: "Kampala Uganda",
   dob: "15-11-1991",
