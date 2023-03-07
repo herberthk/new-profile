@@ -1,2 +1,12 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/276d2a38-fa9b-466a-9ca8-357a13022d34/deploy-status)](https://app.netlify.com/sites/loving-saha-31cc47/deploys)
 # Personal portifolio
+
+> I'm full stack software Engineer with financial accounting background. He specialized in building, developing efficient and modern responsive single page applications, designing, developing and maintaining secure APIs, Database and mobile applications
+
+## Tech-stack
+- Next.js with Typescript with hooks
+- Tailwindcss for user interface
+- Nodemailer for sending email to me from clients sent from serverless functions
+- react-toastify for cool toast notifications
+- Framer-motion for cool performant notification 
+
+![Profile image](/profile.png)

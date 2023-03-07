@@ -51,14 +51,14 @@ export const projects: Projects[] = [
 
   {
     name: "Calculator",
-    desc: "This is the calculator that can perform nearly all basic calculations developed with the modern and advanced user interface. The technology stack includes Reactjs, sass, styled components, jest, React-testing-library, cypress and github actions for CI/CD pipeline.",
+    desc: "This is the calculator that can perform nearly all basic calculations developed with the modern and advanced user interface. The technology stack includes Reactjs, Custom CSS and github actions for CI/CD pipeline.",
     imageUrl: "/images/calc.png",
     url: "https://calc-bce28.firebaseapp.com",
     githubUrl: "https://github.com/herberthk/modern_calc",
   },
   {
-    name: "Live chat",
-    desc: "Live chat is the real time chat web application that supports private chat rooms developed using websockets. The technology stack used includes Reactjs, Redux, styled components, Typescript, socket.io, cypress, jest, React-testing-library on frontend, Nodejs, Typescript, jest for unit and integration testing, socket.io on the server side. Github actions for CI/CD pipeline.",
+    name: "Private Live chat",
+    desc: "Live chat is the real time chat web application that supports private chat rooms developed using websockets. The technology stack used includes Reactjs, socket.io on frontend, Nodejs, Typescript, jest for unit and integration testing, socket.io on the server side. Github actions for CI/CD pipeline.",
     imageUrl: "/images/chat.png",
     url: "https://live-chat-b4ffd.firebaseapp.com",
     githubUrl: "https://github.com/herberthk/chat-client",
