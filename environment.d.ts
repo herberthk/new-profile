@@ -1,7 +1,7 @@
 // Make environment variables strongly typed
 declare global {
   namespace NodeJS {
-    interface ProcessEnv {
+    export interface ProcessEnv {
       NODE_ENV: "development" | "production";
       PORT?: number;
       SMTP: string;
