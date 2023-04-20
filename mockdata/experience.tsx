@@ -2,8 +2,8 @@ import { Exp } from "../interface";
 
 export const experience: Exp[] = [
   {
-    desc: `I'm a full-stack developer at Aerial Inc based in Washington US which is effortless legal
-    document management that leverage the power of machine learning to prepare for and complete due diligence in a fraction of the time.`,
+    desc: `I'm a full-stack developer at Aerial Inc based in Washington US which is SAAS application that offers effortless legal
+    document management that leverages the power of machine learning to prepare for and complete due diligence in a fraction of the time.`,
     name: "Aerial Inc",
     year: "2023-To date",
     projects: [{ project: "Aerial app", url: "https://aerialops.io/" }],
@@ -11,24 +11,22 @@ export const experience: Exp[] = [
       "TypeScript",
       "React.js",
       "NextJs",
-      "Docker,",
-      "kubernetes",
+      "Docker",
       "Cypress,",
-      "Amazon-RDS",
       "GraphQL",
       "CSS3",
       "SASS",
       "Storybook",
       "styled-components",
       "Webpack",
-      "TRPC",
+      "tRPC",
       "Zod",
       "Amazon S3",
       "Redis",
       "Github Actions",
       "MongoDB",
       "Firebase",
-      "Mantine",
+      "Mantine UI",
       "Sentry",
       "underscore",
       "pdfjs-dist",
@@ -36,6 +34,7 @@ export const experience: Exp[] = [
       "jspdf",
       "bson",
       "jszip",
+      "Vercel",
     ],
   },
   {
@@ -53,9 +52,9 @@ export const experience: Exp[] = [
       "TypeScript",
       "React.js",
       "Nodejs/express",
-      "Docker,",
+      "Docker",
       "kubernetes",
-      "Cypress,",
+      "Cypress",
       "Zustand",
       "Amazon-RDS",
       "GraphQL",
@@ -74,7 +73,7 @@ export const experience: Exp[] = [
     ],
   },
   {
-    desc: `I was full stack software Engineer at netbritz.com which is the new modern social media with almost all features of modern social App. It was engeneered with full JavaScript stack which is Reactjs, Redux, Apollo-client, Apollo-server, Expressjs, and MongoDb.`,
+    desc: `I was full stack software Engineer at Netbritz.com which is the new modern social media with almost all features of modern social App. It was engineered with full JavaScript stack which is ReactJs, Redux, Apollo-client, Apollo-server, ExpressJs, and MongoDb.`,
     name: "Netbritz",
     year: "2018-To 2020",
     projects: [{ project: "Company website", url: "https://netbritz.com/" }],
@@ -101,7 +100,7 @@ export const experience: Exp[] = [
     ],
   },
   {
-    desc: `I was Fullstack developer and team leader resposible for designing, developing and maintaining new user interfaces for both mobile and desktop, developing and maintaining API's, designing and developing databases among others.`,
+    desc: `I was Fullstack developer and team leader responsible for designing, developing and maintaining new user interfaces for both mobile and desktop, developing and maintaining API's, designing and developing databases among others.`,
     name: "Wakanda Great View Holidays",
     year: "2017-2018",
     projects: [
