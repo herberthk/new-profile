@@ -38,25 +38,25 @@ export const projects: Projects[] = [
   {
     name: "AERIAL",
     url: "https://aerialops.io/",
-    desc: "Effortless legal document management that Leverage the power of machine learning to prepare for and complete due diligence in a fraction of the time.",
+    desc: "Aerial is the SaaS application that offers effortless legal document management that leverages the power of machine learning to prepare for and complete due diligence in a fraction of the time. It is based in Seattle Washington DC united states.",
     imageUrl: "/images/aerial.png",
   },
   {
     name: "Netbritz",
-    desc: "Netbritz is the new social media and social networking internet service that provides modern, efficient and easy way to share with the world. Share photos, text, videos, emoji Gifs with your loved ones. Create photo albums to organise your photos. Follow your Preferred topics with hashtag and alot more. ",
+    desc: "Netbritz is the new social media and social networking internet service that provides modern, efficient and easy way to share with the world. Share photos, text, videos, emoji Gif with your loved ones. Create photo albums to organize your photos. Follow your Preferred topics with hashtag and a lot more. ",
     imageUrl: "/images/nb.jpg",
     url: "https://netbritz.com/",
   },
   {
     name: "Firebase private chat application",
-    desc: "Private chat application written with Firebase, Typescript, Nextjs, and SASS",
+    desc: "Private chat application written with Firebase, Typescript, NextJs, and SASS",
     url: "https://firebase-private-chat.vercel.app",
     githubUrl: "https://github.com/herberthk/Firebase-private-chat",
     imageUrl: "/images/chat-firebase.png",
   },
   {
     name: "Google search clone",
-    desc: "This is a clone of Google Search engine provided and operated by Google. Handling more than 3.5 billion searches per day however this clone has limits set by Google on qeries per day",
+    desc: "This is a clone of Google Search engine provided and operated by Google. Handling more than 3.5 billion searches per day however this clone has limits set by Google on queries per day",
     imageUrl: "/images/google.png",
     url: "https://google-search-clone-red.vercel.app/",
     githubUrl: "https://github.com/herberthk/Google-search-clone",
@@ -64,20 +64,20 @@ export const projects: Projects[] = [
 
   {
     name: "Calculator",
-    desc: "This is the calculator that can perform nearly all basic calculations developed with the modern and advanced user interface. The technology stack includes Reactjs, Custom CSS and github actions for CI/CD pipeline.",
+    desc: "This is the calculator that can perform nearly all basic calculations developed with the modern and advanced user interface. The technology stack includes ReactJs, Custom CSS and github actions for CI/CD pipeline.",
     imageUrl: "/images/calc.png",
     url: "https://calc-bce28.firebaseapp.com",
     githubUrl: "https://github.com/herberthk/modern_calc",
   },
   {
     name: "Private Live chat",
-    desc: "Live chat is the real time chat web application that supports private chat rooms developed using websockets. The technology stack used includes Reactjs, socket.io on frontend, Nodejs, Typescript, jest for unit and integration testing, socket.io on the server side. Github actions for CI/CD pipeline.",
+    desc: "Live chat is the real time chat web application that supports private chat rooms developed using websockets. The technology stack used includes ReactJs, socket.io on frontend, Nodejs, Typescript, jest for unit and integration testing, socket.io on the server side. Github actions for CI/CD pipeline.",
     imageUrl: "/images/chat.png",
     url: "https://live-chat-b4ffd.firebaseapp.com",
     githubUrl: "https://github.com/herberthk/chat-client",
   },
   {
-    name: "TRPC Next.js s3 chat app",
+    name: "tRPC Next.js s3 chat app",
     desc: "Next.js + tRPC + S3 presigned urls Chat application with infinite Scroll",
     imageUrl: "/images/trpc.png",
     url: "https://trpc-nextjs-s3.vercel.app/",
@@ -91,7 +91,7 @@ export const projects: Projects[] = [
   },
   {
     name: "DirectEd donation app",
-    desc: "This is work in progress application that enables high-potential under-resourced students in Kenya and Ethiopia realise their full potential in the globalised economy through our coding bootcamp scholarship where they learn the most sought-after digital skills on the market.",
+    desc: "This is work in progress application that enables high-potential under-resourced students in Kenya and Ethiopia realize their full potential in the globalized economy through our coding bootcamp scholarship where they learn the most sought-after digital skills on the market.",
     imageUrl: "/images/donation.png",
     url: "https://direct-ed-donation-app.vercel.app/",
     githubUrl: "https://github.com/herberthk/DirectEd-donation-app",
