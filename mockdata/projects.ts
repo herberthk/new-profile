@@ -36,10 +36,23 @@ export const projects: Projects[] = [
     githubUrl: "https://github.com/herberthk/chat-GPT-codex-app",
   },
   {
+    name: "AERIAL",
+    url: "https://aerialops.io/",
+    desc: "Effortless legal document management that Leverage the power of machine learning to prepare for and complete due diligence in a fraction of the time.",
+    imageUrl: "/images/aerial.png",
+  },
+  {
     name: "Netbritz",
     desc: "Netbritz is the new social media and social networking internet service that provides modern, efficient and easy way to share with the world. Share photos, text, videos, emoji Gifs with your loved ones. Create photo albums to organise your photos. Follow your Preferred topics with hashtag and alot more. ",
     imageUrl: "/images/nb.jpg",
     url: "https://netbritz.com/",
+  },
+  {
+    name: "Firebase private chat application",
+    desc: "Private chat application written with Firebase, Typescript, Nextjs, and SASS",
+    url: "https://firebase-private-chat.vercel.app",
+    githubUrl: "https://github.com/herberthk/Firebase-private-chat",
+    imageUrl: "/images/chat-firebase.png",
   },
   {
     name: "Google search clone",

@@ -2,9 +2,46 @@ import { Exp } from "../interface";
 
 export const experience: Exp[] = [
   {
+    desc: `I'm a full-stack developer at Aerial Inc based in Washington US which is effortless legal
+    document management that leverage the power of machine learning to prepare for and complete due diligence in a fraction of the time.`,
+    name: "Aerial Inc",
+    year: "2023-To date",
+    projects: [{ project: "Aerial app", url: "https://aerialops.io/" }],
+    techStack: [
+      "TypeScript",
+      "React.js",
+      "NextJs",
+      "Docker,",
+      "kubernetes",
+      "Cypress,",
+      "Amazon-RDS",
+      "GraphQL",
+      "CSS3",
+      "SASS",
+      "Storybook",
+      "styled-components",
+      "Webpack",
+      "TRPC",
+      "Zod",
+      "Amazon S3",
+      "Redis",
+      "Github Actions",
+      "MongoDB",
+      "Firebase",
+      "Mantine",
+      "Sentry",
+      "underscore",
+      "pdfjs-dist",
+      "superjson",
+      "jspdf",
+      "bson",
+      "jszip",
+    ],
+  },
+  {
     desc: `I'm a full-stack and team lead developer at GitStart YC(S-19) that helps some of the world's fastest-growing engineering teams accelerate with Pull Requests as a Service. Assign us on tickets, review incoming Pull Requests, only pay for those you merge. You can thus save time, flexibly scale engineering capacity and accelerate within weeks.`,
     name: "GitStart YC(S-19)",
-    year: "2021-To date",
+    year: "2020-To 2023",
     projects: [
       { project: "Company website,", url: "https://www.gitstart.com/" },
       { project: "Developer portal,", url: "https://www.gitstart.dev/" },
@@ -39,7 +76,7 @@ export const experience: Exp[] = [
   {
     desc: `I was full stack software Engineer at netbritz.com which is the new modern social media with almost all features of modern social App. It was engeneered with full JavaScript stack which is Reactjs, Redux, Apollo-client, Apollo-server, Expressjs, and MongoDb.`,
     name: "Netbritz",
-    year: "2018-To 2021",
+    year: "2018-To 2020",
     projects: [{ project: "Company website", url: "https://netbritz.com/" }],
     techStack: [
       "TypeScript",
