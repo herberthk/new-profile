@@ -57,6 +57,7 @@ const TimeLine: FC<TimeLineProps> = ({
             <p className="break-all leading-normal">
               {techStack.map((t, i) => (
                 <span
+                  title={t}
                   className={classNames(
                     "rounded-full bg-[#00a78e] p-1 text-sm text-white",
                     {
