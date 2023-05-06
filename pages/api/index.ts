@@ -7,13 +7,27 @@ type Data = {
   message: string;
 };
 
+interface Request extends NextApiRequest {
+  name: string;
+  email: string;
+  message: string;
+}
+
 export default async function handler(
-  req: NextApiRequest,
+  req: Request,
   res: NextApiResponse<Data>
 ) {
   if (req.method === "POST") {
     try {
-      const { name, email, message } = req.body;
+      const { name, email, message, location } = req.body;
+      if (!name || !email || !message) {
+        res.status(401).json({
+          success: false,
+          message: "All fields are required",
+        });
+        return;
+      }
+      const loc = location || "Anonymous";
       const transporter = await nodemailer.createTransport({
         host: process.env.SMTP,
         port: 465,
@@ -28,7 +42,7 @@ export default async function handler(
         to: "herberthtk100@gmail.com", // list of receivers
         subject: `Inquiry from your profile`, // Subject line
         // text: "Hello world?",
-        html: `<p><b>Hello Herbert</b>,</p>${name} with ${email} has sent ${message}</p>`,
+        html: `<p><b>Hello Herbert</b>,</p>${name} with email ${email} from ${loc} has sent ${message}</p>`,
       });
 
       res.status(200).json({ success: true, message: "Message sent" });
@@ -36,6 +50,4 @@ export default async function handler(
       res.status(500).json({ success: false, message: "Message not sent" });
     }
   }
-
-  // res.status(200).json({ name: "John Doe" });
 }

@@ -13,6 +13,7 @@ import { slideIn } from "../util/motion";
 import { FormEvent, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { getLocation } from "../../utils";
 
 const Bottom = () => {
   const [name, setName] = useState("");
@@ -24,11 +25,20 @@ const Bottom = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    if (!name || !email || !message) {
+      toast.error("All fields are required ", {
+        closeOnClick: true,
+        progress: undefined,
+      });
+      return;
+    }
+    const location = getLocation();
     try {
       const result = await axios.post("/api", {
         email,
         name,
         message,
+        location,
       });
 
       toast.success(result.data.message, {
