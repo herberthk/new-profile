@@ -55,6 +55,13 @@ export const projects: Projects[] = [
     imageUrl: "/images/chat-firebase.png",
   },
   {
+    name: "CryptoWorld",
+    desc: "Crypto currency detail information, exchange rate and news written with Nextjs-13 app-router, Typescript, Redux-toolkit ",
+    url: "https://crypto-world-five.vercel.app",
+    githubUrl: "https://github.com/herberthk/crypto-world",
+    imageUrl: "/images/crypto.png",
+  },
+  {
     name: "Google search clone",
     desc: "This is a clone of Google Search engine provided and operated by Google. Handling more than 3.5 billion searches per day however this clone has limits set by Google on queries per day",
     imageUrl: "/images/google.png",
