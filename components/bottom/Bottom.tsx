@@ -91,6 +91,7 @@ const Bottom = () => {
               placeholder="Name"
               otherClasses="mb-4 rounded-full"
               required
+              disabled={loading}
             />
             <TextInput
               onChange={(e) => setEmail(e.target.value)}
@@ -99,6 +100,7 @@ const Bottom = () => {
               type="email"
               placeholder="Email"
               otherClasses="rounded-full"
+              disabled={loading}
             />
             <TextArea
               inputClassName="mt-4 rounded-lg"
@@ -106,6 +108,7 @@ const Bottom = () => {
               name="message"
               required
               value={message}
+              disabled={loading}
               onChange={(e) => setMessage(e.target.value)}
               // isValid={false}
             />

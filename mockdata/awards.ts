@@ -10,7 +10,7 @@ export const awards: Awards[] = [
   {
     id: "2",
     from: "Hackerrank",
-    title: "Rest api proficiency certificate",
+    title: "Rest API (Intermediate) Certificate",
     url: "https://www.hackerrank.com/certificates/eb09027c6957",
   },
   {
