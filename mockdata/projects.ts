@@ -56,10 +56,17 @@ export const projects: Projects[] = [
   },
   {
     name: "CryptoWorld",
-    desc: "Crypto currency detail information, exchange rate and news written with Nextjs-13 app-router, Typescript, Redux-toolkit ",
+    desc: "Crypto currency detail information, exchange rate and news written with Nextjs-13 app-router, Typescript, OpenAI, Redux-toolkit and Ant design",
     url: "https://crypto-world-five.vercel.app",
     githubUrl: "https://github.com/herberthk/crypto-world",
     imageUrl: "/images/crypto.png",
+  },
+  {
+    name: "Custom code editor",
+    desc: "The custom built code editor that supports major programming languages and intellisense written with Nextjs-13 app-router, Typescript, Zustand, Material UI and Monaco editor package",
+    url: "https://codex-custom-editor.vercel.app",
+    githubUrl: "https://github.com/herberthk/codex-custom-editor",
+    imageUrl: "/images/editor.png",
   },
   {
     name: "Google search clone",
