@@ -82,18 +82,20 @@ const Projects = () => {
                   />
                 )}
 
-                <CustomButton
-                  text="Live demo"
-                  backgroundColor="text-white"
-                  otherClasses="border border-white mt-4 hover:bg-orange-700 ml-5"
-                  paddingX="px-[1rem]"
-                  paddingY="py-[0.3rem]"
-                  fontSize="text-[0.9rem]"
-                  as={Link}
-                  href={url}
-                  target={"_blank"}
-                  uppercase={true}
-                />
+                {url && (
+                  <CustomButton
+                    text="Live demo"
+                    backgroundColor="text-white"
+                    otherClasses="border border-white mt-4 hover:bg-orange-700 ml-5"
+                    paddingX="px-[1rem]"
+                    paddingY="py-[0.3rem]"
+                    fontSize="text-[0.9rem]"
+                    as={Link}
+                    href={url}
+                    target={"_blank"}
+                    uppercase={true}
+                  />
+                )}
               </div>
             </div>
           </motion.div>

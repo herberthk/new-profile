@@ -40,7 +40,7 @@ export interface Exp {
 export interface Projects {
   name: string;
   desc: string;
-  url: string;
+  url?: string;
   imageUrl: string;
   githubUrl?: string;
 }

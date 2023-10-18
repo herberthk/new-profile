@@ -69,6 +69,12 @@ export const projects: Projects[] = [
     imageUrl: "/images/editor.png",
   },
   {
+    name: "Nylas AI email and scheduling client",
+    desc: "This application uses Nylas API and ChatGPT to create and view calendar events, View and send emails, Schedule meetings, and Auto responder with the power of Chart GPT written with Nextjs-13 app-router, Typescript, Zustand, Mantine UI, Nylas Nodejs API, OpenAI chatGTP, Storybook, and others",
+    githubUrl: "https://github.com/herberthk/nylas-frontend",
+    imageUrl: "/images/new email.png",
+  },
+  {
     name: "Google search clone",
     desc: "This is a clone of Google Search engine provided and operated by Google. Handling more than 3.5 billion searches per day however this clone has limits set by Google on queries per day",
     imageUrl: "/images/google.png",
