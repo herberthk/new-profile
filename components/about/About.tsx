@@ -17,7 +17,7 @@ const About = () => {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-7">
         <motion.div
           className="relative mx-auto w-[100%]"
-          variants={slideIn("right", "tween", 0, 1)}
+          variants={slideIn("right", "spring", 1, 2)}
         >
           <Image
             src="/images/coding.jpg"
