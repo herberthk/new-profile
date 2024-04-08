@@ -41,31 +41,6 @@ const MenuIcon: FC<Props> = ({ showMenu }) => {
 const HeaderLinks = () => {
   const [show, setShowMenu] = useState(false);
   const showMenu = () => setShowMenu(!show);
-  //   const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
-  //   const headerRef = useRef<HTMLDivElement>(null);
-
-  //   // handle scroll event
-  //   const handleScroll = (elTopOffset: number, elHeight: number) => {
-  //     if (window.pageYOffset > elTopOffset + elHeight) {
-  //       setSticky({ isSticky: true, offset: elHeight });
-  //     } else {
-  //       setSticky({ isSticky: false, offset: 0 });
-  //     }
-  //   };
-
-  //   // add/remove scroll event listener
-  //   useEffect(() => {
-  //     var header = headerRef.current!.getBoundingClientRect();
-  //     const handleScrollEvent = () => {
-  //       handleScroll(header.top, header.height);
-  //     };
-
-  //     window.addEventListener("scroll", handleScrollEvent);
-
-  //     return () => {
-  //       window.removeEventListener("scroll", handleScrollEvent);
-  //     };
-  //   }, []);
 
   return (
     <motion.div
