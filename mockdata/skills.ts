@@ -6,6 +6,10 @@ export const skills: Skills[] = [
     skill: "Nextjs",
   },
   {
+    percentage: 85,
+    skill: "React-native",
+  },
+  {
     percentage: 90,
     skill: "Nodejs/Expressjs",
   },
@@ -96,7 +100,7 @@ export const skills: Skills[] = [
     skill: "Serverless Functions",
   },
   {
-    percentage: 85,
+    percentage: 70,
     skill: "Micro-services",
   },
   {
