@@ -33,12 +33,12 @@ const Banner = () => {
                 key={key}
                 variants={fadeIn("left", "spring", i * 0.5, 0.75)}
               >
-                <ul className="flex">
-                  <li className="w-[32%] text-lg uppercase sm:w-[20%]">
+                <ul className="flex justify-between">
+                  <li className="text-lg uppercase">
                     <b>{key}</b>
                   </li>
                   <li
-                    className="text-lg hover:text-orange-300"
+                    className="text-left text-lg hover:text-orange-300"
                     dangerouslySetInnerHTML={{ __html: value }}
                   />
                 </ul>
