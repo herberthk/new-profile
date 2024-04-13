@@ -25,7 +25,7 @@ const Skills = () => {
         </div>
         <div
           className={classNames(
-            "mx-auto mt-11 border border-[#34bfff] py-6 sm:w-[70%] sm:py-8",
+            "mx-auto mt-11 border border-[#34bfff] py-6 sm:py-8",
             styles.shadow
           )}
         >
