@@ -47,7 +47,7 @@ const Banner = () => {
           </ul>
         </div>
         <motion.div
-          className="relative ml-auto h-[330px] w-[310px] rounded-2xl border-[5px] border-orange-400 sm:h-[491px] sm:w-[369px]"
+          className="relative ml-auto h-[330px] w-[100%] rounded-2xl border-[5px] border-orange-400 sm:h-[491px] sm:w-[369px]"
           variants={slideIn("right", "spring", 1, 2)}
         >
           <Image
