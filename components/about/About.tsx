@@ -7,7 +7,7 @@ import { fadeIn, slideIn, staggerContainer } from "../util/motion";
 const About = () => {
   return (
     <motion.div
-      className="container mx-auto pt-[1rem] sm:h-[85vh] sm:pt-[6rem]"
+      className="container mx-auto sm:h-[85vh] sm:pt-[1rem]"
       id="section2"
       variants={staggerContainer}
       initial="hidden"
