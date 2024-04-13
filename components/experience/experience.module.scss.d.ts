@@ -6,6 +6,7 @@ export const green: string;
 export const orange: string;
 export const panel: string;
 export const red: string;
+export const tag: string;
 export const timeline: string;
 export const title: string;
 export const year: string;

@@ -43,6 +43,7 @@ export interface Projects {
   url?: string;
   imageUrl: string;
   githubUrl?: string;
+  imageContain?: boolean;
 }
 
 export interface Skills {

@@ -104,13 +104,17 @@
     }
   }
 }
-
+.tag{
+  font-size: 11px;
+  padding: 3px;
+  border-radius: 15px;
+}
 .body {
-  font-size: 1.2rem;
+  // font-size: 1.2rem;
   margin: 0;
   padding: 0;
   color: #777;
-  line-height: 1.9em;
+  line-height: 1.66rem;
 }
 
 .green {
