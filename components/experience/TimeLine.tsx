@@ -58,12 +58,9 @@ const TimeLine: FC<TimeLineProps> = ({
               {techStack.map((t, i) => (
                 <span
                   title={t}
-                  className={classNames(
-                    "rounded-full bg-[#00a78e] p-1 text-sm text-white",
-                    {
-                      "ml-1": i !== 0,
-                    }
-                  )}
+                  className={classNames("bg-[#00a78e] text-white", styles.tag, {
+                    "ml-1": i !== 0,
+                  })}
                   key={i}
                 >
                   {t}

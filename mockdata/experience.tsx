@@ -2,10 +2,44 @@ import { Exp } from "../interface";
 
 export const experience: Exp[] = [
   {
-    desc: `I'm a full-stack developer at Aerial Inc based in Washington US which is SAAS application that offers effortless legal
+    desc: `I'm a full-stack part time lead developer responsible for developing this native application available on both android and IOS with over 5000 downloads. `,
+    name: "Connect up",
+    year: "2024-To date",
+    projects: [
+      {
+        project: "Connect up",
+        url: "https://play.google.com/store/search?q=connect+up&c=apps",
+      },
+    ],
+    techStack: [
+      "React-native",
+      "React.js",
+      "Android",
+      "Docker",
+      "Typescript",
+      "PHP",
+      "Laravel",
+      "React-navigation",
+      "Gradle",
+      "NDK",
+      "Java",
+      "Kotlin",
+      "Swift",
+      "Redux",
+      "MySQL",
+      "Expo",
+      "Firebase",
+      "react-i18next",
+      "Sentry",
+      "react-native-reanimated",
+      "react-native-screens",
+    ],
+  },
+  {
+    desc: `I was a full-stack developer at Aerial Inc based in Washington US which is SAAS application that offers effortless legal
     document management that leverages the power of machine learning to prepare for and complete due diligence in a fraction of the time.`,
     name: "Aerial Inc",
-    year: "2023-To date",
+    year: "2023-To 2024",
     projects: [{ project: "Aerial app", url: "https://aerialops.io/" }],
     techStack: [
       "TypeScript",
@@ -38,7 +72,7 @@ export const experience: Exp[] = [
     ],
   },
   {
-    desc: `I'm a full-stack and team lead developer at GitStart YC(S-19) that helps some of the world's fastest-growing engineering teams accelerate with Pull Requests as a Service. Assign us on tickets, review incoming Pull Requests, only pay for those you merge. You can thus save time, flexibly scale engineering capacity and accelerate within weeks.`,
+    desc: `I was a full-stack and team lead developer at GitStart YC(S-19) that helps some of the world's fastest-growing engineering teams accelerate with Pull Requests as a Service. Assign us on tickets, review incoming Pull Requests, only pay for those you merge. You can thus save time, flexibly scale engineering capacity and accelerate within weeks.`,
     name: "GitStart YC(S-19)",
     year: "2020-To 2023",
     projects: [

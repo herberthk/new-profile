@@ -29,18 +29,26 @@ export const projects: Projects[] = [
     url: "https://www.gitstart.dev/",
   },
   {
+    name: "AERIAL",
+    url: "https://aerialops.io/",
+    desc: "Aerial is the SaaS application that offers effortless legal document management that leverages the power of machine learning to prepare for and complete due diligence in a fraction of the time. It is based in Seattle Washington DC united states.",
+    imageUrl: "/images/aerial.png",
+  },
+  {
+    name: "Connect up",
+    url: "https://play.google.com/store/search?q=connect+up&c=apps",
+    desc: "This is the native application available on both android and IOS with over 5000 downloads that is one stop center, offering short videos services, e-commerce, chat, messaging, bookings and many others. It was written with react-native and Typescript on front-end and php/laravel on backend. I'm currently the lead developer for this application",
+    imageUrl: "/images/c-main.jpg",
+    imageContain: true,
+  },
+  {
     name: "Chat GPT codex application",
     desc: "This application is powered by Chat-GPT3 Artificial intelligence models that can answer almost all questions asked to it. It can also assist you in writing code for major programming languages, writing tests, and debugging",
     imageUrl: "/images/codex.png",
     url: "https://chat-gpt-codex-app.vercel.app/",
     githubUrl: "https://github.com/herberthk/chat-GPT-codex-app",
   },
-  {
-    name: "AERIAL",
-    url: "https://aerialops.io/",
-    desc: "Aerial is the SaaS application that offers effortless legal document management that leverages the power of machine learning to prepare for and complete due diligence in a fraction of the time. It is based in Seattle Washington DC united states.",
-    imageUrl: "/images/aerial.png",
-  },
+
   {
     name: "Netbritz",
     desc: "Netbritz is the new social media and social networking internet service that provides modern, efficient and easy way to share with the world. Share photos, text, videos, emoji Gif with your loved ones. Create photo albums to organize your photos. Follow your Preferred topics with hashtag and a lot more. ",
